@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form For Input and Submit Events</h1>
+    <form onsubmit="return SubmitEvent()">
+        <input type="text" placeholder="Enter Name" id="one">
+        <input type="submit" id="two">
+        <div id="show"></div>
+    </form>
+    <script>
+        const one= document.getElementById('one');
+        const show = document.getElementById('show');
+        one.addEventListener('input', function(){
+            show.textContent = one.value;
+        })
+
+        function SubmitEvent(){
+            console.log(one.value);
+            alert("The name is "+one.value);
+            return false;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tags</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <label>Username : </label>
+        <input type="text" id="uname" name="uname" placeholder="Enter Your Name" required>
+        <br><br>
+
+        <label>Email Id:</label>
+        <input type="email" placeholder="Enter Your email">
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" placeholder="Enter Your Age">
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender"><label>Male</label>
+        <input type="radio" name="gender"><label>Female</label>
+        <br><br>
+
+        <label>Interested Courses:</label>
+        <input type="checkbox" name="java"><label>Java</label>
+        <input type="checkbox" name="python"><label>Python</label>
+        <input type="checkbox" name="testing"><label>Testing</label>
+        <input type="checkbox" name="networking"><label>Networking</label>
+        <br><br>
+
+        <label>Choose your Location:</label>
+        <select id="loc" name="loc">
+            <option >Select your Location</option>
+            <option value="chennai">Chennai</option>
+            <option value="bangalore">Bangalore</option>
+        </select>
+        <br><br>
+
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter Password">
+        <br><br>
+
+        <label>Upload File:</label>
+        <input type="file">
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+        <h6>Already Registered?<a href="one.html">click to login</a></h6>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one"></h1>
+    <div id="d1">Division-1</div>
+    <div id="d2">Division-2</div>
+    <div id="d3">Division-3</div>
+    <script>
+        let display = document.getElementById('one');
+        display.textContent="Hello World!!!";
+        display.style.color = "red";
+
+        let divTags = document.getElementsByTagName('div');
+        console.log(divTags);
+        console.log(divTags[5]);
+        
+        //Create Element:
+        let h1Tag = document.createElement('h1');
+        h1Tag.textContent="This is My Script Element";
+        divTags[2].append(h1Tag);
+        h1Tag.id = "tag";
+    </script>
+</body>
+</html>
